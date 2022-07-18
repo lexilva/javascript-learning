@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio das mensagens</title>
+    <style>
+       
+        h1{
+            
+            font-size: 60px;
+        }
+        input{
+            width: 100px;
+            height: 85px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio das mensagens</h1>
+    <div>
+        <input type="button" value="Botão1" id="btn1" onclick="clicar(event)">
+        <input type="button" value="Botão2" id="btn2" onclick="clicar(event)" >
+        <input type="button" value="Botão3" id="btn3" onclick="clicar(event)">
+    </div>
+    <div id="res"></div>
+    <script>  
+        function clicar(event){
+            var res = event.target.id
+            const text = {
+            btn1: 'Você clicou no 1'+String.fromCharCode(176)+' botão!',
+            btn2: 'Você clicou no 2'+String.fromCharCode(176)+' botão!',
+            btn3: 'Você clicou no 3'+String.fromCharCode(176)+' botão!',
+            }
+            const value = text[res];
+            window.alert(value);
+            /*if(res === 'btn'){
+                window.alert(`você clicou no 1.o botão`)
+            }else if (res === 'btn1'){
+                window.alert(`você clicou no 2.o botão`)
+            }else{
+                window.alert(`você clicou no 3.o botão`)
+            }*/
+        }
+        
+    </script>
+</body>
+</html>

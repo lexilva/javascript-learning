@@ -1,0 +1,9 @@
+@charset "Utf-8";
+h1{
+   font: normal 50px arial;
+}
+input{
+    font-size: 20px;
+    width: 250px;
+    height: 80px;
+}
